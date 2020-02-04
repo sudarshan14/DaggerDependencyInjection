@@ -1,4 +1,5 @@
 package sid.angel.daggerdependencyinjection.module
 
-class Engine {
-}
+import javax.inject.Inject
+
+class Engine @Inject constructor()

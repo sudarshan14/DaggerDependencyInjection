@@ -1,4 +1,24 @@
 package sid.angel.daggerdependencyinjection.module
 
-class Car(engine: Engine, wheel: Wheel) {
+import android.util.Log
+
+import javax.inject.Inject
+
+//@Inject
+class Car @Inject constructor(engine: Engine, wheel: Wheel) {
+
+// lateinit var car:Car
+//
+//init {
+//    DaggerCarComponent.create().getCar()
+//}
+    companion object {
+        private val TAG: String? = "CAR"
+    }
+
+
+    fun drive() {
+
+        Log.d("Sud", " driving")
+    }
 }
