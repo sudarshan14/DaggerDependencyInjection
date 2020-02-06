@@ -1,7 +1,7 @@
 package sid.angel.daggerdependencyinjection.di
 
 import dagger.Component
-import sid.angel.daggerdependencyinjection.view.MainActivity
+import sid.angel.daggerdependencyinjection.MainActivity
 
 
 /*compile time code generation is done.   this is beneficial then the previous dependency

@@ -1,16 +1,17 @@
-package sid.angel.daggerdependencyinjection.view
+package sid.angel.daggerdependencyinjection
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import sid.angel.daggerdependencyinjection.R
-import sid.angel.daggerdependencyinjection.di.CarComponent
 import sid.angel.daggerdependencyinjection.di.DaggerCarComponent
-
 import sid.angel.daggerdependencyinjection.module.Car
 import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
 
+    /*
+    if we have constructor injector then Field and later method injection automatically happens
+     */
 
     @Inject
     lateinit var car: Car

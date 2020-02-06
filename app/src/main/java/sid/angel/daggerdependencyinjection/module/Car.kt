@@ -21,4 +21,10 @@ class Car @Inject constructor(engine: Engine, wheel: Wheel) {
 
         Log.d("Sud", " driving")
     }
+
+
+    @Inject
+    fun enableRemote(remote: Remote){
+        remote.setListener(this)
+    }
 }
