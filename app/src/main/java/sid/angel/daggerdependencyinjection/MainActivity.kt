@@ -2,7 +2,6 @@ package sid.angel.daggerdependencyinjection
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import sid.angel.daggerdependencyinjection.R
 import sid.angel.daggerdependencyinjection.di.DaggerCarComponent
 import sid.angel.daggerdependencyinjection.module.Car
 import javax.inject.Inject
@@ -15,8 +14,9 @@ class MainActivity : AppCompatActivity() {
 
     @Inject
     lateinit var car: Car
-
+    
     init {
+
         DaggerCarComponent.create().getCar(this)
         //inject method is form ApiComponent interface
 //        DaggerApiComponent.create().inject(this)
